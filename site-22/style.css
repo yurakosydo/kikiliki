@@ -1,0 +1,236 @@
+
+header{
+	height:100vh;
+}
+.bg_top{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(65,34,142,0.9);
+}
+.m_t{
+	padding-top:15%;
+}
+.p_a{
+	position:absolute;
+	z-index:999;
+}
+.m h1{
+font-size:60px;
+}
+.mt_5{
+	margin-bottom:-15%;
+	margin-left:10%;
+}
+.ml_5{
+	margin-bottom:-13%;
+	margin-left:80%;
+}
+nav{
+	transition:1s;
+}
+#banner{
+width: 100%;
+height:100vh;
+overflow: hidden;
+position: relative;
+text-align: center;
+font-family: 'PT Sans', sans-serif;
+z-index: 20;
+}
+#banner img{
+position: absolute;
+top: 0;
+left: 0;
+z-index: 5;
+}
+.ni_up{
+	font-size:25px;
+}
+h1{
+  background-image: -webkit-linear-gradient(to right, #0575E6, #00F260);
+  background-image: linear-gradient(to right, #0575E6, #00F260);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size:36px;
+    display: block;
+  font-familly:"Open Sans";
+  font-weight:bold;
+}
+.hexa-progress,.hexa-progress-bg{
+  position:absolute;
+  width:140px;
+  overflow: visible;
+  opacity:0;
+  stroke-linecap: round;
+}
+.hexa-progress path{
+  stroke-width:4px;
+  stroke: url(#lineargr);
+  fill:none;
+}
+.tr{
+	transition:0.5s;
+}
+.hexa-progress-bg path{
+  stroke-width:4px;
+  opacity:0.2;
+  stroke: url(#lineargr);
+  fill:none;
+}
+.percent{
+    background-image: -webkit-linear-gradient(to right, #0575E6, #00F260);
+  background-image: linear-gradient(to right, #0575E6, #00F260);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position:absolute;
+  font-size:45px;
+  opacity:0;
+    font-family: 'Satisfy', cursive;
+}
+#containerpctbox{
+  display:grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 0px;
+  align-content: center;	
+  height:300px;
+}
+.pctbox{
+  position:relative;
+}
+#randomize{
+    background: none;
+    border: none;
+    width: calc(200px / 2);
+    height:calc(83.75px / 2);
+    left:calc(50% - 50px);
+    bottom:20px;
+    outline: none;
+    position: absolute;
+    margin: 1em;
+    padding: 0;
+    cursor:pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cont-svg-btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.cont-svg-btn path{
+  fill:none;
+  stroke-width:4px;
+  stroke:url(#lineargr);
+}
+.svg-btn-text{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+    -khtml-user-select: none;
+    user-select: none;
+  background-image: linear-gradient(to right, #0575E6, #00F260);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.bg{
+	background-image:url(images/backgrounds/education-bg.png);
+	background-repeat:repeat-y;
+	background-size:100%;
+	height:120vh;
+	margin-top:-10%;
+}
+.bg i{
+	border:1px solid white;
+	padding:20px;
+	border-radius:50%;
+	background-color:white;
+}
+.shrink{
+	background-color:#533799;
+}
+header .fixed-top{
+	padding-left:21.3%;
+	padding-right:21.3%;
+}
+.navbar-light{
+	background-color:#533799;
+}
+.c_d .card{
+	-webkit-box-shadow: -26px 14px 38px 6px rgba(205,241,255,1);
+-moz-box-shadow: -26px 14px 38px 6px rgba(205,241,255,1);
+box-shadow: -26px 14px 38px 6px rgba(205,241,255,1);
+border-radius:10px;
+}
+footer{
+	background-color:#222222;
+}
+@media screen and (max-width: 810px) {
+ #containerpctbox{
+  }
+  .pctbox:nth-child(4){
+    display:none;
+  }
+  .img{
+  	display:none;
+  }
+  .bg{
+  	height:auto;
+  }
+  .card{
+  	margin-top:10%;
+  	margin-left:5%;
+  }
+  header .fixed-top{
+	padding-left:5%;
+	padding-right:5%;
+}
+  header section img{
+  	display:none;
+  }
+  #portfolio img{
+margin-top:20px;
+  }
+  #banner h1{
+padding-top:30%;
+  }
+}
+@media screen and (max-width: 630px) {
+  #containerpctbox{
+     grid-template-columns: 50% 50%;
+  }
+  .pctbox:nth-child(3){
+    display:none;
+  }
+}
+@media screen and (max-width: 390px) {
+ #containerpctbox{
+     grid-template-columns: 100%;
+  }
+  .pctbox:nth-child(2){
+    display:none;
+  }
+  h1{
+    width:auto;
+  }
+}
